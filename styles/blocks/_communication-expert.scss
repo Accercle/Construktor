@@ -1,0 +1,118 @@
+.communication-expert {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    padding-inline: 165px;
+    background-color: var(--color-light-alt);
+
+    @include tablet {
+        padding-inline: 90px;
+    }
+
+    @include mobile {
+        padding-inline: 50px;
+        row-gap: 20px;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        max-width: 825px;
+        row-gap: 16px;
+        margin: auto;
+        text-align: center;
+    }
+
+    &__description {
+        text-wrap: wrap;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: center;
+        column-gap: 20px;
+
+        @include desktop { 
+            padding-inline: 43px;
+        }
+
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+        }
+
+        @include mobile {
+            row-gap: 10px;
+            padding: 0;
+        }
+    }
+
+    &__input {
+        width: 260px;
+        padding: 18px;
+        border: 1px solid var(--color-dark);
+        border-radius: var(--border-radius);
+        opacity: 0.1;
+
+        &::placeholder {
+            color: var(--color-dark);
+            opacity: 0.8;
+            font-size: 18px;
+            font-weight: 800;
+
+            @include mobile {
+                font-size: 14px;
+                opacity: 0.9;
+                font-weight: 700;
+            }
+        }
+
+        &:focus {
+            opacity: 1;
+            outline: none;
+        }
+
+        @include desktop {
+            width: 240px;
+        }
+
+        @include tablet {
+            width: 100%;
+        }
+
+        @include mobile {
+            padding: 14px;
+        }
+    }
+
+    &__button {
+        width: 220px;
+        padding: 16px 32px;
+        border-radius: var(--border-radius);
+        font-size: 18px;
+        font-weight: 500;
+        text-wrap: nowrap;
+
+        @include tablet {
+            width: 100%;
+        }
+
+        @include mobile {
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+    }
+
+    &__agreement {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 700;
+        opacity: 0.4;
+    }
+
+    &__color {
+        color: var(--border-color);
+    }
+}

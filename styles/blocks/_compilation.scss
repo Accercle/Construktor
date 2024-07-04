@@ -1,0 +1,75 @@
+.compilation {
+    &__form {
+        @include flex-center(true);
+        flex-direction: column;
+        padding: 40px;
+        max-width: 445px;
+        max-height: 268px;
+        row-gap: 20px;
+        background-color: var(--color-light);
+        border-radius: var(--border-radius-big);
+        margin-top: 50px;
+
+        @include desktop {
+            margin-top: 30px;
+            padding: 30px;
+            max-width: 400px;
+            max-height: 240px;
+        }
+
+        @include tablet {
+            max-width: none;
+            width: 65%;
+            margin-top: 15px;
+            padding: 20px;
+        }
+
+        @include mobile {
+            width: 90%;
+            row-gap: 10px;
+            padding: 15px;
+        }
+    }
+
+    &__description {
+        text-align: center;
+        color: var(--color-dark);
+        font-size: 18px;
+        font-weight: 500;
+
+        @include mobile {
+            font-size: 14px;
+        }
+    }
+
+    &__button {
+        width: 100%;
+        font-size: 18px;
+        font-weight: 500;
+
+        @include desktop {
+            padding-block: 14px;
+        }
+
+        @include mobile {
+            font-size: 14px;
+        }
+    }
+
+    &__link {
+        color: var(--color-dark);
+        opacity: 0.4;
+        font-size: 15px;
+        font-weight: 500;
+
+        @include hover {
+            color: var(--color-border-text);
+            opacity: 1;
+        }
+
+        @include mobile {
+            text-wrap: nowrap;
+            font-size: 14px;
+        }
+    }
+}

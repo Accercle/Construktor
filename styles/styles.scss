@@ -1,0 +1,20 @@
+@import 
+    '_mixins',
+    '_utils',
+    '_variables',
+    '_normalize',
+    '_globals',
+    '_media';
+
+@import 
+    'blocks/_header',
+    'blocks/_section',
+    'blocks/_hero',
+    'blocks/_compilation',
+    'blocks/_product',
+    'blocks/_communication-expert',
+    'blocks/_team',
+    'blocks/_about-us',
+    'blocks/_reviews',
+    'blocks/_partners',
+    'blocks/_footer';

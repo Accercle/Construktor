@@ -1,0 +1,113 @@
+.reviews {
+    padding-inline: 335px;
+    position: relative;
+
+    @include tablet {
+        padding-inline: 200px;
+    }
+
+    @include mobile {
+        padding-inline: 100px;
+    }
+
+    @include mobile-s {
+        padding-inline: 40px;
+    }
+
+    &::after,
+    &::before {
+        position: absolute;
+        content: '';
+        width: 64px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        box-shadow: 0 0 20px 0 var(--color-dark);
+        opacity: 0.4;
+        translate: -50% -50%;
+        left: 91%;
+        top: 50%;
+        background: url('.././images/icons/arrow.svg') center no-repeat;
+
+        @include tablet {
+            width: 45px;
+        }
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &::after {
+        left: 10%;
+        top: 50%;
+        rotate: 180deg;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+        max-width: 730px;
+        margin-inline: auto;
+
+        @include tablet {
+            max-width: none;
+        }
+    }
+
+    &__avatar {
+        margin: auto;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+
+        @include mobile {
+            font-size: 20px;
+        }
+    }
+
+    &__name {
+        color: var(--color-dark);
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 4px;
+
+        @include mobile {
+            font-size: 16px;
+        }
+    }
+
+    &__job {
+        color: var(--color-dark);
+        opacity: 0.4;
+        font-size: 13px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    &__body {
+        max-width: 730px;
+        margin-inline: auto;
+
+        @include tablet {
+            max-width: none;
+        }
+    }
+    
+    &__pagination {
+        &-list {
+            display: flex;
+            justify-content: center;
+            column-gap: 8px;
+        }
+
+        &-button {
+            border: none;
+            background-color: transparent;
+        }
+    }
+}

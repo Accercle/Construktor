@@ -1,0 +1,45 @@
+.container { 
+    max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+    margin: auto;
+    padding-inline: var(--container-padding-x);
+}
+
+.visually-hidden {
+    @include visually-hidden;
+  }
+
+.button {
+    border: var(--border);
+    background-color: var(--border-color);
+    border-radius: var(--border-radius);
+    color: var(--color-dark-alt);
+    font-weight: 500;
+    padding-block: 16px;
+}
+
+.button:hover {
+    background-color: transparent;
+}
+
+.title-light {
+    font-weight: 700;
+    color: var(--color-light);
+}
+
+// .hidden-desktop {
+//     @media (min-width: 768px) {
+//         display: none !important;
+//     }
+// }
+
+.hidden-mobile {
+    @media (max-width:767px) {
+        display: none !important;
+    } 
+}
+
+// .hidden-mobile {
+//     @media (min-width:768px) {
+//         display: none;
+//     }
+// }

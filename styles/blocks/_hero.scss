@@ -1,0 +1,58 @@
+.hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 200px 165px;
+    background: url('.././images/hero.svg') center/cover no-repeat;
+    justify-items: center;
+
+    @include desktop {
+        padding: 150px 95px;
+    }
+
+    @include tablet {
+       @include flex-center;
+
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    @include mobile {
+        row-gap: 10px;
+        padding: 70px 30px;
+    }
+
+    &__body {
+        display: grid;
+        row-gap: 24px;
+        max-width: 445px;
+    }
+
+    &__title {
+        font-size: 64px;
+
+        @include desktop {
+            font-size: 50px;
+        }
+
+        @include tablet {
+            font-size: 40px;
+        }
+    }
+
+
+    &__description {
+        font-size: 24px;
+        font-weight: 500;
+        color: var(--color-light);
+        opacity: 0.8;
+        text-wrap: wrap;
+
+        @include desktop {
+            font-size: 20px;   
+        }
+
+        @include tablet {
+            font-size: 18px;
+        }
+    }
+}

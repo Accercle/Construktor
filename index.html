@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Construktor</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <a href="/" class="header__logo">Продажа квартир</a>
+            <ul class="header__list">
+                    <li class="header__item">
+                        <a href="/" class="header__link">О компании</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="/" class="header__link">Новости</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="/" class="header__link">Помощь</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="/" class="header__link">Отзывы</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="/" class="header__link">Контакты</a>
+                    </li>
+            </ul>
+            <div class="header__help">
+                <div class="header__help--text">Служба продаж</div>
+                <div class="header__help--tel">
+                    <a href="tel:74951234567">+7 495 123-45-67</a>
+                </div>
+            </div>
+            <button 
+                class="header__button button"
+                type="button"
+            >
+                Заказать звонок
+            </button>
+        </div>
+    </header>
+
+    <main class="content">
+        <section class="section hero">
+            <div class="hero__body">
+                <h1 class="hero__title title-light">
+                    Купите <br>
+                    квартиру <br>
+                    своей мечты
+                </h1>
+                <div class="hero__description">
+                    <p>Мы продаём прекрасные квартиры в вашем городе. Оставьте заявку или ознакомьтесь с предложениями</p>
+                </div>
+            </div>
+            <form class="compilation__form">
+                <div class="compilation__description">
+                    <p>
+                        Ищите квартиру? <br>
+                        Оставьте заявку на подбор квартиры <br>
+                        прямо сейчас и мы поможем! 
+                    </p>
+                </div>
+                <button 
+                    class="compilation__button button"
+                    type="submit"
+                >
+                    Оставить заявку
+                </button>
+                <a href="#" class="compilation__link">от 15 дней пробный период</a>
+            </form>
+        </section>
+        <section class="section">
+            <header class="section__header">
+                <h2 class="visually-hidden">Предложения по покупке квартиры</h2>
+            </header>
+            <div class="section__body">
+                <div class="product">
+                    <ul class="product__list">
+                        <li class="product__item">
+                            <article class="product-card">
+                                <img 
+                                    src="images/products/1.svg" 
+                                    alt="" 
+                                    class="product-card__image"
+                                    width="350" height="350" loading="lazy"
+                                />
+                                <h3 class="product-card__title">Двухкомнатная квартира</h3>
+                                <div class="product-card__contacts">
+                                    <p> ул. Ленина, дом 25 </p>
+                                </div>
+                                <div class="product-card__cost">
+                                    <p> 3 450 000 ₽ </p>
+                                </div>
+                                <button 
+                                    class="button product-card__button"
+                                    type="button"
+                                >
+                                    Заказать
+                                </button>
+                            </article>
+                        </li>
+                        <li class="product__item">
+                            <article class="product-card product-card--special-offer">
+                                <img 
+                                    src="images/products/2.svg" 
+                                    alt="" 
+                                    class="product-card__image"
+                                    width="350" height="350" loading="lazy"
+                                />
+                                <h3 class="product-card__title">Однокомнатная квартира</h3>
+                                <div class="product-card__contacts">
+                                    <p> ул. Октябрьская, дом 14 </p>
+                                </div>
+                                <div class="product-card__cost">
+                                    <span> 2 150 000 ₽ </span>
+                                    <span class="product-card__cost--old-cost"> 2 450 000 ₽ </span>
+                                </div>
+                                <button 
+                                    class="button product-card__button"
+                                    type="button"
+                                >
+                                    Заказать
+                                </button>
+                            </article>
+                        </li>
+                        <li class="product__item">
+                            <article class="product-card">
+                                <img 
+                                    src="images/products/3.svg" 
+                                    alt="" 
+                                    class="product-card__image"
+                                    width="350" height="350" loading="lazy"
+                                />
+                                <h3 class="product-card__title">Трехкомнатная квартира</h3>
+                                <div class="product-card__contacts">
+                                    <p> ул. Варламова, дом 8 </p>
+                                </div>
+                                <div class="product-card__cost">
+                                    <p> 3 150 000 ₽ </p>
+                                </div>
+                                <button 
+                                    class="button product-card__button"
+                                    type="button"
+                                >
+                                    Заказать
+                                </button>
+                            </article>
+                        </li>
+                        <li class="product__item">
+                            <article class="product-card">
+                                <img 
+                                    src="images/products/4.svg" 
+                                    alt="" 
+                                    class="product-card__image"
+                                    width="350" height="350" loading="lazy"
+                                />
+                                <h3 class="product-card__title">Двухкомнатная квартира</h3>
+                                <div class="product-card__contacts">
+                                    <p> ул. Ленина, дом 25 </p>
+                                </div>
+                                <div class="product-card__cost">
+                                    <p> 3 450 000 ₽ </p>
+                                </div>
+                                <button 
+                                    class="button product-card__button"
+                                    type="button"
+                                >
+                                    Заказать
+                                </button>
+                            </article>
+                        </li>
+                        <li class="product__item">
+                            <article class="product-card product-card--special-offer">
+                                <img 
+                                    src="images/products/5.svg" 
+                                    alt="" 
+                                    class="product-card__image"
+                                    width="350" height="350" loading="lazy"
+                                />
+                                <h3 class="product-card__title">Однокомнатная квартира</h3>
+                                <div class="product-card__contacts">
+                                    <p> ул. Октябрьская, дом 14 </p>
+                                </div>
+                                <div class="product-card__cost">
+                                    <span> 2 150 000 ₽ </span>
+                                    <span class="product-card__cost--old-cost"> 2 450 000 ₽ </span>
+                                </div>
+                                <button 
+                                    class="button product-card__button"
+                                    type="button"
+                                >
+                                    Заказать
+                                </button>
+                            </article>
+                        </li>
+                        <li class="product__item">
+                            <article class="product-card">
+                                <img 
+                                    src="images/products/6.svg" 
+                                    alt="" 
+                                    class="product-card__image"
+                                    width="350" height="350" loading="lazy"
+                                />
+                                <h3 class="product-card__title">Трехкомнатная квартира</h3>
+                                <div class="product-card__contacts">
+                                    <p> ул. Варламова, дом 8 </p>
+                                </div>
+                                <div class="product-card__cost">
+                                    <p> 3 150 000 ₽ </p>
+                                </div>
+                                <button 
+                                    class="button product-card__button"
+                                    type="button"
+                                >
+                                    Заказать
+                                </button>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section communication-expert">
+            <header class="section__header communication-expert__header">
+                <h2 class="communication-expert__title h2">Предложения по покупке квартиры</h2>
+                <div class="communication-expert__description">
+                    <p>
+                        Ничего страшного! Мы поможем вам в подборе и найдём идеальный вариант. Оставьте заявку прямо сейчас - и мы свяжеся с вами в ближайшее время
+                    </p>
+                </div>
+            </header>
+            <div class="section__body communication-expert__body">
+                <form class="communication-expert__form">
+                        <label class="communication-expert__item">
+                            <input 
+                                type="text" 
+                                class="communication-expert__input"
+                                name="name"
+                                placeholder="Ваше имя"
+                                required
+                            />
+                        </label>
+                        <label class="communication-expert__item">
+                            <input 
+                                type="tel" 
+                                class="communication-expert__input"
+                                name="phone"
+                                placeholder="+7 (000) 000-0000"
+                                required
+                            />
+                        </label>
+                        <label class="communication-expert__item">
+                            <input 
+                                type="email" 
+                                class="communication-expert__input"
+                                name="email"
+                                placeholder="E-mail"
+                                required
+                            />
+                        </label>
+                        <button 
+                            class="communication-expert__button button"
+                            type="submit"
+                        >
+                            Оставить заявку
+                        </button>
+                </form>
+                <div class="communication-expert__agreement">
+                    <p>Оставляя заявку, вы соглашаетесь на <span class="communication-expert__color">обработку персональных данных</span> и c <span class="communication-expert__color">условиями бронирования счёта</span></p>
+                </div>
+            </div>
+        </section>
+        <section class="section team">
+                <header class="section__header team__header">
+                    <h2 class="team__title--color h3">Команда</h2>
+                    <h3 class="team__title h2">Наши специалисты</h3>
+                    <div class="team__description">
+                        <p>
+                            Наша команда готова помочь решить Вам любую задачу с недвижимостью.
+                        </p>
+                    </div>
+                </header>
+                <div class="section__body team__body">
+                    <div class="team__profile">
+                        <img 
+                            src="images/team/1.svg" 
+                            alt="" 
+                            class="team__image"
+                            width="180" height="180" loading="lazy"
+                        />
+                        <h4 class="team__name">
+                            <p>
+                                Имя Фамилия
+                            </p>
+                        </h4>
+                        <div class="team__profile-description">
+                            <p>
+                                Описание
+                            </p>
+                        </div>
+                    </div>
+                    <div class="team__profile">
+                        <img 
+                            src="images/team/2.svg" 
+                            alt="" 
+                            class="team__image"
+                            width="180" height="180" loading="lazy"
+                        />
+                        <h4 class="team__name">
+                            <p>
+                                Имя Фамилия
+                            </p>
+                        </h4>
+                        <div class="team__profile-description">
+                            <p>
+                                Описание
+                            </p>
+                        </div>
+                    </div>
+                    <div class="team__profile">
+                        <img 
+                            src="images/team/3.svg" 
+                            alt="" 
+                            class="team__image"
+                            width="180" height="180" loading="lazy"
+                        />
+                        <h4 class="team__name">
+                            <p>
+                                Имя Фамилия
+                            </p>
+                        </h4>
+                        <div class="team__profile-description">
+                            <p>
+                                Описание
+                            </p>
+                        </div>
+                    </div>
+                    <div class="team__profile">
+                        <img 
+                            src="images/team/4.svg" 
+                            alt="" 
+                            class="team__image"
+                            width="180" height="180" loading="lazy"
+                        />
+                        <h4 class="team__name">
+                            <p>
+                                Имя Фамилия
+                            </p>
+                        </h4>
+                        <div class="team__profile-description">
+                            <p>
+                                Описание
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="section about-us">
+                <header class="section__header about-us__header">
+                    <h2 class="about-us__title--color h3">О компании</h2>
+                    <h3 class="about-us__title h2">8 лет мы помогаем вам заключать сделки с недвижимостью</h3>
+                    <div class="about-us__description">
+                        <p>
+                            Это ваш голосовой клон AI. Мы фиксируем ваши уникальные речевые образцы, произношение и эмоциональный диапазон, чтобы создать реалистичный голос-реплику.
+    Загрузите записи или выполните один из наших сценариев, чтобы создать свой собственный голос.
+                        </p>
+                        <p>
+                            Загрузите записи или выполните один из наших сценариев, чтобы создать свой собственный голос.
+                        </p>
+                    </div>
+                </header>
+                <div class="section__body about-us__body">
+                    <button 
+                        class="button about-us__button"
+                        type="button"
+                    >
+                        Больше
+                    </button>
+                </div>
+        </section>
+        <section class="section reviews">
+            <header class="section__header reviews__header">
+                <img 
+                    src="images/avatar.svg" 
+                    alt="" 
+                    class="reviews__avatar"
+                    width="64" height="64" loading="lazy"
+                />
+                <h2 class="reviews__title">Работа с сервисом приносит радость, потому что высочайший профессионализм, удобство, оперативность, и просто приятные люди!</h2>
+                <div class="reviews__name">
+                        Александра Селезнева
+                <div class="reviews__job">
+                        фотограф
+                </div>
+                </div>
+            </header>
+            <div class="section__body reviews__body">
+                <div class="reviews__pagination">
+                    <ul class="reviews__pagination-list">
+                        <li class="reviews__pagination-item">
+                            <button 
+                                class="reviews__pagination-button is-current"
+                                type="button"
+                                title="slider"
+                            >
+                                <svg width="24" height="4" viewBox="0 0 24 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24" height="4" rx="2" fill="#FF4B4B"/>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="reviews__pagination-item">
+                            <button 
+                                class="reviews__pagination-button"
+                                type="button"
+                                title="slider"
+                            >
+                                <svg width="24" height="4" viewBox="0 0 24 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24" height="4" rx="2" fill="black" fill-opacity="0.1"/>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="reviews__pagination-item">
+                            <button 
+                                class="reviews__pagination-button"
+                                type="button"
+                                title="slider"
+                            >
+                                <svg width="24" height="4" viewBox="0 0 24 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24" height="4" rx="2" fill="black" fill-opacity="0.1"/>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="reviews__pagination-item">
+                            <button 
+                                class="reviews__pagination-button"
+                                type="button"
+                                title="slider"
+                            >
+                                <svg width="24" height="4" viewBox="0 0 24 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24" height="4" rx="2" fill="black" fill-opacity="0.1"/>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="reviews__pagination-item">
+                            <button 
+                                class="reviews__pagination-button"
+                                type="button"
+                                title="slider"
+                            >
+                                <svg width="24" height="4" viewBox="0 0 24 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24" height="4" rx="2" fill="black" fill-opacity="0.1"/>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section partners">
+            <header class="section__header partners__header">
+                <h2 class="partners__title h1">Наши партнеры</h2>
+            </header>
+            <div class="section__body partners__body">
+                <ul class="partners__list">
+                    <li class="partners__item">
+                        <a class="partners__link">
+                            <img 
+                                src="images/partners/1.svg" 
+                                alt="" 
+                                class="partners__image"
+                                width="255" height="160" loading="lazy"
+                            />
+                        </a>
+                    </li>
+                    <li class="partners__item">
+                        <a class="partners__link">
+                            <img 
+                                src="images/partners/2.svg" 
+                                alt="" 
+                                class="partners__image"
+                                width="255" height="160" loading="lazy"
+                            />
+                        </a>
+                    </li>
+                    <li class="partners__item">
+                        <a class="partners__link">
+                            <img 
+                                src="images/partners/3.svg" 
+                                alt="" 
+                                class="partners__image"
+                                width="255" height="160" loading="lazy"
+                            />
+                        </a>
+                    </li>
+                    <li class="partners__item">
+                        <a class="partners__link">
+                            <img 
+                                src="images/partners/4.svg" 
+                                alt="" 
+                                class="partners__image"
+                                width="255" height="160" loading="lazy"
+                            />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <header class="footer__header">
+            <div class="footer__header-contacts">
+                <h2 class="footer__header-title">Контакты</h2>
+                <div class="footer__header-link">
+                    <a href="tel:79876543210"">+7 987 654-32-10</a>
+                    <br>
+                    <a href="email:info@constructor.ru">info@constructor.ru</a>
+                </div>
+                <address class="footer__header-address">
+                    г. Москва, метро “Китай город”, <br>
+                    ул. Яузская, дом 15/11
+                </address>
+            </div>
+            <div class="footer__header-map">
+                <img 
+                    src="images/map.svg" 
+                    alt="Карта офиса" 
+                    class="footer__header-image"
+                    width="900" height="400" loading="lazy"
+                />
+            </div>
+        </header>
+        <div class="footer__body">
+            <ul class="footer__list-soc1als">
+                <li class="footer__item-soc1als">
+                    <a href="" class="footer__link-soc1als">
+                        <span class="visually-hidden">Facebook</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z" fill="#241F20"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__item-soc1als">
+                    <a href="" class="footer__link-soc1als">
+                        <span class="visually-hidden">Instagram</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C8.74 0 8.333 0.015 7.053 0.072C5.775 0.132 4.905 0.333 4.14 0.63C3.351 0.936 2.681 1.347 2.014 2.014C1.347 2.681 0.935 3.35 0.63 4.14C0.333 4.905 0.131 5.775 0.072 7.053C0.012 8.333 0 8.74 0 12C0 15.26 0.015 15.667 0.072 16.947C0.132 18.224 0.333 19.095 0.63 19.86C0.936 20.648 1.347 21.319 2.014 21.986C2.681 22.652 3.35 23.065 4.14 23.37C4.906 23.666 5.776 23.869 7.053 23.928C8.333 23.988 8.74 24 12 24C15.26 24 15.667 23.985 16.947 23.928C18.224 23.868 19.095 23.666 19.86 23.37C20.648 23.064 21.319 22.652 21.986 21.986C22.652 21.319 23.065 20.651 23.37 19.86C23.666 19.095 23.869 18.224 23.928 16.947C23.988 15.667 24 15.26 24 12C24 8.74 23.985 8.333 23.928 7.053C23.868 5.776 23.666 4.904 23.37 4.14C23.064 3.351 22.652 2.681 21.986 2.014C21.319 1.347 20.651 0.935 19.86 0.63C19.095 0.333 18.224 0.131 16.947 0.072C15.667 0.012 15.26 0 12 0ZM12 2.16C15.203 2.16 15.585 2.176 16.85 2.231C18.02 2.286 18.655 2.48 19.077 2.646C19.639 2.863 20.037 3.123 20.459 3.542C20.878 3.962 21.138 4.361 21.355 4.923C21.519 5.345 21.715 5.98 21.768 7.15C21.825 8.416 21.838 8.796 21.838 12C21.838 15.204 21.823 15.585 21.764 16.85C21.703 18.02 21.508 18.655 21.343 19.077C21.119 19.639 20.864 20.037 20.444 20.459C20.025 20.878 19.62 21.138 19.064 21.355C18.644 21.519 17.999 21.715 16.829 21.768C15.555 21.825 15.18 21.838 11.97 21.838C8.759 21.838 8.384 21.823 7.111 21.764C5.94 21.703 5.295 21.508 4.875 21.343C4.306 21.119 3.915 20.864 3.496 20.444C3.075 20.025 2.806 19.62 2.596 19.064C2.431 18.644 2.237 17.999 2.176 16.829C2.131 15.569 2.115 15.18 2.115 11.985C2.115 8.789 2.131 8.399 2.176 7.124C2.237 5.954 2.431 5.31 2.596 4.89C2.806 4.32 3.075 3.93 3.496 3.509C3.915 3.09 4.306 2.82 4.875 2.611C5.295 2.445 5.926 2.25 7.096 2.19C8.371 2.145 8.746 2.13 11.955 2.13L12 2.16ZM12 5.838C8.595 5.838 5.838 8.598 5.838 12C5.838 15.405 8.598 18.162 12 18.162C15.405 18.162 18.162 15.402 18.162 12C18.162 8.595 15.402 5.838 12 5.838ZM12 16C9.79 16 8 14.21 8 12C8 9.79 9.79 8 12 8C14.21 8 16 9.79 16 12C16 14.21 14.21 16 12 16ZM19.846 5.595C19.846 6.39 19.2 7.035 18.406 7.035C17.611 7.035 16.966 6.389 16.966 5.595C16.966 4.801 17.612 4.156 18.406 4.156C19.199 4.155 19.846 4.801 19.846 5.595Z" fill="#241F20"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__item-soc1als">
+                    <a href="" class="footer__link-soc1als">
+                        <span class="visually-hidden">Twitter</span>
+                        <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.954 2.56909C23.069 2.95809 22.124 3.22309 21.129 3.34409C22.143 2.73309 22.923 1.77009 23.292 0.621094C22.341 1.17609 21.287 1.58009 20.165 1.80509C19.269 0.846094 17.992 0.246094 16.574 0.246094C13.857 0.246094 11.654 2.44909 11.654 5.16309C11.654 5.55309 11.699 5.92809 11.781 6.28709C7.691 6.09409 4.066 4.13009 1.64 1.16109C1.213 1.88309 0.974 2.72209 0.974 3.63609C0.974 5.34609 1.844 6.84909 3.162 7.73209C2.355 7.70609 1.596 7.48409 0.934 7.11609V7.17709C0.934 9.56209 2.627 11.5511 4.88 12.0041C4.467 12.1151 4.031 12.1751 3.584 12.1751C3.27 12.1751 2.969 12.1451 2.668 12.0891C3.299 14.0421 5.113 15.4661 7.272 15.5061C5.592 16.8251 3.463 17.6111 1.17 17.6111C0.78 17.6111 0.391 17.5881 0 17.5441C2.189 18.9381 4.768 19.7531 7.557 19.7531C16.611 19.7531 21.556 12.2571 21.556 5.76709C21.556 5.55809 21.556 5.34709 21.541 5.13709C22.502 4.44809 23.341 3.57709 24.001 2.58909L23.954 2.56909Z" fill="#241F20"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__item-soc1als">
+                    <a href="" class="footer__link-soc1als">
+                        <span class="visually-hidden">Vk</span>
+                        <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.057 14.3021H20.4367C19.4451 14.3021 19.1386 13.5133 17.3566 11.7073C15.8046 10.2048 15.1179 10.002 14.7363 10.002C14.2014 10.002 14.0482 10.1552 14.0482 10.893V13.2594C14.0482 13.8964 13.8453 14.278 12.1656 14.278C9.39198 14.278 6.3119 12.5983 4.14984 9.46711C0.892471 4.88756 0 1.45139 0 0.739218C0 0.357589 0.153253 0.00150237 0.890969 0.00150237H3.51129C4.17238 0.00150237 4.4278 0.306505 4.68322 1.01868C5.97986 4.75985 8.14342 8.04276 9.03439 8.04276C9.36494 8.04276 9.51819 7.88951 9.51819 7.05113V3.18074C9.41602 1.39881 8.47397 1.24706 8.47397 0.611508C8.47397 0.305002 8.72939 0 9.13506 0H13.2579C13.8183 0 14.0211 0.305002 14.0211 0.966092V6.1842C14.0211 6.74312 14.2765 6.94745 14.4283 6.94745C14.7588 6.94745 15.0398 6.74312 15.6498 6.13311C17.5339 4.02063 18.8816 0.763259 18.8816 0.763259C19.0604 0.38163 19.3654 0.0255417 20.028 0.0255417H22.6483C23.4371 0.0255417 23.6159 0.431211 23.4371 0.991635C23.1066 2.51965 19.9003 7.04812 19.9003 7.04812C19.6208 7.50638 19.5187 7.70921 19.9003 8.22005C20.1798 8.60168 21.0963 9.39048 21.7078 10.1027C22.8271 11.3753 23.6911 12.4435 23.9209 13.1827C24.1764 13.919 23.7932 14.3006 23.0555 14.3006L23.057 14.3021Z" fill="#241F20"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <ul class="footer__list-nav">
+                <li class="footer__item-nav">
+                    <a href="" class="footer__link-nav">
+                        О компании
+                    </a>
+                </li>
+                <li class="footer__item-nav">
+                    <a href="" class="footer__link-nav">
+                        Новости
+                    </a>
+                </li>
+                <li class="footer__item-nav">
+                    <a href="" class="footer__link-nav">
+                        Помощь
+                    </a>
+                </li>
+                <li class="footer__item-nav">
+                    <a href="" class="footer__link-nav">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+            <div class="footer__copyright">
+                <p>© <time datetime="2020">2020</time> Продажа квартир</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
